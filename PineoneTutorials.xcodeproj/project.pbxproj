@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A64E520F735E6BB634C0B60 /* Pods_PineoneTutorialsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5603281C17A9553BAF1553D /* Pods_PineoneTutorialsTests.framework */; };
+		333DF8F0B835CD3288751F4B /* Pods_PineoneTutorials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1960654056F1C42917769934 /* Pods_PineoneTutorials.framework */; };
+		4409553B3C1FABED12A915D1 /* Pods_PineoneTutorials_PineoneTutorialsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC5B107B325C926F60CD14E /* Pods_PineoneTutorials_PineoneTutorialsUITests.framework */; };
+		C3A8C9E028A3722900701FEC /* Substring+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8C9DF28A3722900701FEC /* Substring+.swift */; };
+		C3A8C9E228A3816800701FEC /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8C9E128A3816800701FEC /* String+.swift */; };
+		C3A8C9E428A38DCD00701FEC /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8C9E328A38DCD00701FEC /* UIView+.swift */; };
+		C3A8C9EF28A4FC2B00701FEC /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8C9EE28A4FC2B00701FEC /* MainTabbarController.swift */; };
+		C3B4937728A0E0410001271C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4937628A0E0410001271C /* AppDelegate.swift */; };
+		C3B4937928A0E0410001271C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4937828A0E0410001271C /* SceneDelegate.swift */; };
+		C3B4937B28A0E0410001271C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4937A28A0E0410001271C /* SearchViewController.swift */; };
+		C3B4937E28A0E0410001271C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B4937C28A0E0410001271C /* Main.storyboard */; };
+		C3B4938028A0E0440001271C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B4937F28A0E0440001271C /* Assets.xcassets */; };
+		C3B4938328A0E0440001271C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B4938128A0E0440001271C /* LaunchScreen.storyboard */; };
+		C3B4938E28A0E0440001271C /* PineoneTutorialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4938D28A0E0440001271C /* PineoneTutorialsTests.swift */; };
+		C3B4939828A0E0450001271C /* PineoneTutorialsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4939728A0E0450001271C /* PineoneTutorialsUITests.swift */; };
+		C3B4939A28A0E0450001271C /* PineoneTutorialsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4939928A0E0450001271C /* PineoneTutorialsUITestsLaunchTests.swift */; };
+		C3B493A728A0EE9C0001271C /* NewBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B493A628A0EE9C0001271C /* NewBooksViewController.swift */; };
+		C3B493AF28A0F4940001271C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B493AE28A0F4940001271C /* APIService.swift */; };
+		C3B493B228A0FF580001271C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B493B128A0FF580001271C /* Book.swift */; };
+		C3B493B428A212EB0001271C /* DetailBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B493B328A212EB0001271C /* DetailBookController.swift */; };
+		C3B493B728A251850001271C /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B493B628A251850001271C /* R.swift */; };
+		C3C551EE28AC9FF50066DEEC /* ToastConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C551E628AC9FF50066DEEC /* ToastConfiguration.swift */; };
+		C3C551EF28AC9FF50066DEEC /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C551E828AC9FF50066DEEC /* ToastView.swift */; };
+		C3C551F028AC9FF50066DEEC /* AppleTextToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C551EA28AC9FF50066DEEC /* AppleTextToastView.swift */; };
+		C3C551F328AC9FF50066DEEC /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C551ED28AC9FF50066DEEC /* Toast.swift */; };
+		C3C551F628ACDB950066DEEC /* UIAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C551F528ACDB950066DEEC /* UIAnimatable.swift */; };
+		FB84336928AA7FD600918DCB /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84336828AA7FD600918DCB /* Double+.swift */; };
+		FB92F89728A13F5F00E72C6D /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB92F89628A13F5F00E72C6D /* SearchViewCell.swift */; };
+		FB92F89928A1416000E72C6D /* NewBooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB92F89828A1416000E72C6D /* NewBooksCell.swift */; };
+		FB92F89B28A168EF00E72C6D /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB92F89A28A168EF00E72C6D /* SearchPlaceholderView.swift */; };
+		FB92F89D28A29D8B00E72C6D /* SearchResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB92F89C28A29D8B00E72C6D /* SearchResultsCell.swift */; };
+		FB92F8A028A2A65800E72C6D /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB92F89F28A2A65800E72C6D /* UIViewController+.swift */; };
+		FB92F8A228A2AD7700E72C6D /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB92F8A128A2AD7700E72C6D /* Int+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3B4938A28A0E0440001271C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B4936B28A0E0410001271C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B4937228A0E0410001271C;
+			remoteInfo = PineoneTutorials;
+		};
+		C3B4939428A0E0450001271C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B4936B28A0E0410001271C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B4937228A0E0410001271C;
+			remoteInfo = PineoneTutorials;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1960654056F1C42917769934 /* Pods_PineoneTutorials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PineoneTutorials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E19725882D219B2538BA164 /* Pods-PineoneTutorials-PineoneTutorialsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PineoneTutorials-PineoneTutorialsUITests.release.xcconfig"; path = "Target Support Files/Pods-PineoneTutorials-PineoneTutorialsUITests/Pods-PineoneTutorials-PineoneTutorialsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7206F4A5900761A5C63379A5 /* Pods-PineoneTutorials.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PineoneTutorials.debug.xcconfig"; path = "Target Support Files/Pods-PineoneTutorials/Pods-PineoneTutorials.debug.xcconfig"; sourceTree = "<group>"; };
+		7D1A3EB0A0D2D62CE38CBA7A /* Pods-PineoneTutorials-PineoneTutorialsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PineoneTutorials-PineoneTutorialsUITests.debug.xcconfig"; path = "Target Support Files/Pods-PineoneTutorials-PineoneTutorialsUITests/Pods-PineoneTutorials-PineoneTutorialsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B05563B9FB3562FF21D57501 /* Pods-PineoneTutorials.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PineoneTutorials.release.xcconfig"; path = "Target Support Files/Pods-PineoneTutorials/Pods-PineoneTutorials.release.xcconfig"; sourceTree = "<group>"; };
+		C3A8C9DF28A3722900701FEC /* Substring+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Substring+.swift"; sourceTree = "<group>"; };
+		C3A8C9E128A3816800701FEC /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		C3A8C9E328A38DCD00701FEC /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		C3A8C9EE28A4FC2B00701FEC /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		C3B4937328A0E0410001271C /* PineoneTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PineoneTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B4937628A0E0410001271C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3B4937828A0E0410001271C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C3B4937A28A0E0410001271C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C3B4937D28A0E0410001271C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3B4937F28A0E0440001271C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3B4938228A0E0440001271C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3B4938428A0E0440001271C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B4938928A0E0440001271C /* PineoneTutorialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PineoneTutorialsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B4938D28A0E0440001271C /* PineoneTutorialsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PineoneTutorialsTests.swift; sourceTree = "<group>"; };
+		C3B4939328A0E0450001271C /* PineoneTutorialsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PineoneTutorialsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B4939728A0E0450001271C /* PineoneTutorialsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PineoneTutorialsUITests.swift; sourceTree = "<group>"; };
+		C3B4939928A0E0450001271C /* PineoneTutorialsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PineoneTutorialsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3B493A628A0EE9C0001271C /* NewBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBooksViewController.swift; sourceTree = "<group>"; };
+		C3B493AE28A0F4940001271C /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C3B493B128A0FF580001271C /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C3B493B328A212EB0001271C /* DetailBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookController.swift; sourceTree = "<group>"; };
+		C3B493B628A251850001271C /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		C3C551E628AC9FF50066DEEC /* ToastConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastConfiguration.swift; sourceTree = "<group>"; };
+		C3C551E828AC9FF50066DEEC /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		C3C551EA28AC9FF50066DEEC /* AppleTextToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleTextToastView.swift; sourceTree = "<group>"; };
+		C3C551ED28AC9FF50066DEEC /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		C3C551F528ACDB950066DEEC /* UIAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatable.swift; sourceTree = "<group>"; };
+		D3C361E336C06F003AC69652 /* Pods-PineoneTutorialsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PineoneTutorialsTests.debug.xcconfig"; path = "Target Support Files/Pods-PineoneTutorialsTests/Pods-PineoneTutorialsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5A3D86CF84A32BA6292C86F /* Pods-PineoneTutorialsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PineoneTutorialsTests.release.xcconfig"; path = "Target Support Files/Pods-PineoneTutorialsTests/Pods-PineoneTutorialsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5603281C17A9553BAF1553D /* Pods_PineoneTutorialsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PineoneTutorialsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB84336828AA7FD600918DCB /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		FB92F89628A13F5F00E72C6D /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		FB92F89828A1416000E72C6D /* NewBooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBooksCell.swift; sourceTree = "<group>"; };
+		FB92F89A28A168EF00E72C6D /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
+		FB92F89C28A29D8B00E72C6D /* SearchResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCell.swift; sourceTree = "<group>"; };
+		FB92F89F28A2A65800E72C6D /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		FB92F8A128A2AD7700E72C6D /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		FBC5B107B325C926F60CD14E /* Pods_PineoneTutorials_PineoneTutorialsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PineoneTutorials_PineoneTutorialsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3B4937028A0E0410001271C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333DF8F0B835CD3288751F4B /* Pods_PineoneTutorials.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B4938628A0E0440001271C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A64E520F735E6BB634C0B60 /* Pods_PineoneTutorialsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B4939028A0E0450001271C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4409553B3C1FABED12A915D1 /* Pods_PineoneTutorials_PineoneTutorialsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F4DBF5E1363DEB4E271B968 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7206F4A5900761A5C63379A5 /* Pods-PineoneTutorials.debug.xcconfig */,
+				B05563B9FB3562FF21D57501 /* Pods-PineoneTutorials.release.xcconfig */,
+				7D1A3EB0A0D2D62CE38CBA7A /* Pods-PineoneTutorials-PineoneTutorialsUITests.debug.xcconfig */,
+				3E19725882D219B2538BA164 /* Pods-PineoneTutorials-PineoneTutorialsUITests.release.xcconfig */,
+				D3C361E336C06F003AC69652 /* Pods-PineoneTutorialsTests.debug.xcconfig */,
+				E5A3D86CF84A32BA6292C86F /* Pods-PineoneTutorialsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3A8C9E728A4FAF300701FEC /* NewBook */ = {
+			isa = PBXGroup;
+			children = (
+				C3B493A628A0EE9C0001271C /* NewBooksViewController.swift */,
+				C3A8C9E828A4FAFC00701FEC /* Cell */,
+			);
+			path = NewBook;
+			sourceTree = "<group>";
+		};
+		C3A8C9E828A4FAFC00701FEC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB92F89828A1416000E72C6D /* NewBooksCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C3A8C9E928A4FB0E00701FEC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C3B493B328A212EB0001271C /* DetailBookController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C3A8C9EA28A4FB1100701FEC /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4937A28A0E0410001271C /* SearchViewController.swift */,
+				C3A8C9EB28A4FB2F00701FEC /* Cell */,
+				C3A8C9EC28A4FB4900701FEC /* BackgroundView */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C3A8C9EB28A4FB2F00701FEC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB92F89628A13F5F00E72C6D /* SearchViewCell.swift */,
+				FB92F89C28A29D8B00E72C6D /* SearchResultsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C3A8C9EC28A4FB4900701FEC /* BackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				FB92F89A28A168EF00E72C6D /* SearchPlaceholderView.swift */,
+			);
+			path = BackgroundView;
+			sourceTree = "<group>";
+		};
+		C3A8C9ED28A4FC1F00701FEC /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8C9EE28A4FC2B00701FEC /* MainTabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		C3B4936A28A0E0410001271C = {
+			isa = PBXGroup;
+			children = (
+				C3B4937528A0E0410001271C /* PineoneTutorials */,
+				C3B4938C28A0E0440001271C /* PineoneTutorialsTests */,
+				C3B4939628A0E0450001271C /* PineoneTutorialsUITests */,
+				C3B4937428A0E0410001271C /* Products */,
+				5F4DBF5E1363DEB4E271B968 /* Pods */,
+				FA0C6568FEA9AD33448534D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3B4937428A0E0410001271C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4937328A0E0410001271C /* PineoneTutorials.app */,
+				C3B4938928A0E0440001271C /* PineoneTutorialsTests.xctest */,
+				C3B4939328A0E0450001271C /* PineoneTutorialsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3B4937528A0E0410001271C /* PineoneTutorials */ = {
+			isa = PBXGroup;
+			children = (
+				FB92F89E28A2A63A00E72C6D /* Utils */,
+				C3B493B528A251710001271C /* Resources */,
+				C3B493B028A0F4C60001271C /* Model */,
+				C3B493AB28A0F47B0001271C /* Service */,
+				C3B493A828A0EF920001271C /* Controllers */,
+				C3B4937628A0E0410001271C /* AppDelegate.swift */,
+				C3B4937828A0E0410001271C /* SceneDelegate.swift */,
+				C3B4937C28A0E0410001271C /* Main.storyboard */,
+				C3B4937F28A0E0440001271C /* Assets.xcassets */,
+				C3B4938128A0E0440001271C /* LaunchScreen.storyboard */,
+				C3B4938428A0E0440001271C /* Info.plist */,
+			);
+			path = PineoneTutorials;
+			sourceTree = "<group>";
+		};
+		C3B4938C28A0E0440001271C /* PineoneTutorialsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4938D28A0E0440001271C /* PineoneTutorialsTests.swift */,
+			);
+			path = PineoneTutorialsTests;
+			sourceTree = "<group>";
+		};
+		C3B4939628A0E0450001271C /* PineoneTutorialsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4939728A0E0450001271C /* PineoneTutorialsUITests.swift */,
+				C3B4939928A0E0450001271C /* PineoneTutorialsUITestsLaunchTests.swift */,
+			);
+			path = PineoneTutorialsUITests;
+			sourceTree = "<group>";
+		};
+		C3B493A828A0EF920001271C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8C9ED28A4FC1F00701FEC /* Tabbar */,
+				C3A8C9E728A4FAF300701FEC /* NewBook */,
+				C3A8C9EA28A4FB1100701FEC /* Search */,
+				C3A8C9E928A4FB0E00701FEC /* Detail */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C3B493AB28A0F47B0001271C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C3B493AE28A0F4940001271C /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C3B493B028A0F4C60001271C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3B493B128A0FF580001271C /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3B493B528A251710001271C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3B493B628A251850001271C /* R.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3C551E528AC9FF50066DEEC /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				C3C551E728AC9FF50066DEEC /* ToastViews */,
+				C3C551E628AC9FF50066DEEC /* ToastConfiguration.swift */,
+				C3C551ED28AC9FF50066DEEC /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		C3C551E728AC9FF50066DEEC /* ToastViews */ = {
+			isa = PBXGroup;
+			children = (
+				C3C551EA28AC9FF50066DEEC /* AppleTextToastView.swift */,
+				C3C551E828AC9FF50066DEEC /* ToastView.swift */,
+			);
+			path = ToastViews;
+			sourceTree = "<group>";
+		};
+		C3C551F428ACDB850066DEEC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C3C551F528ACDB950066DEEC /* UIAnimatable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		FA0C6568FEA9AD33448534D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1960654056F1C42917769934 /* Pods_PineoneTutorials.framework */,
+				FBC5B107B325C926F60CD14E /* Pods_PineoneTutorials_PineoneTutorialsUITests.framework */,
+				F5603281C17A9553BAF1553D /* Pods_PineoneTutorialsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB92F89E28A2A63A00E72C6D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C3C551F428ACDB850066DEEC /* Protocol */,
+				C3C551E528AC9FF50066DEEC /* Toast */,
+				FB92F89F28A2A65800E72C6D /* UIViewController+.swift */,
+				FB92F8A128A2AD7700E72C6D /* Int+.swift */,
+				C3A8C9DF28A3722900701FEC /* Substring+.swift */,
+				C3A8C9E128A3816800701FEC /* String+.swift */,
+				C3A8C9E328A38DCD00701FEC /* UIView+.swift */,
+				FB84336828AA7FD600918DCB /* Double+.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3B4937228A0E0410001271C /* PineoneTutorials */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B4939D28A0E0450001271C /* Build configuration list for PBXNativeTarget "PineoneTutorials" */;
+			buildPhases = (
+				99DCBC8E138CF78CE8CE39B8 /* [CP] Check Pods Manifest.lock */,
+				C3B4936F28A0E0410001271C /* Sources */,
+				C3B4937028A0E0410001271C /* Frameworks */,
+				C3B4937128A0E0410001271C /* Resources */,
+				408B52FA99EFED782EB17274 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PineoneTutorials;
+			productName = PineoneTutorials;
+			productReference = C3B4937328A0E0410001271C /* PineoneTutorials.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3B4938828A0E0440001271C /* PineoneTutorialsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B493A028A0E0450001271C /* Build configuration list for PBXNativeTarget "PineoneTutorialsTests" */;
+			buildPhases = (
+				9E90BF8DCDA939BFFDB146FF /* [CP] Check Pods Manifest.lock */,
+				C3B4938528A0E0440001271C /* Sources */,
+				C3B4938628A0E0440001271C /* Frameworks */,
+				C3B4938728A0E0440001271C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3B4938B28A0E0440001271C /* PBXTargetDependency */,
+			);
+			name = PineoneTutorialsTests;
+			productName = PineoneTutorialsTests;
+			productReference = C3B4938928A0E0440001271C /* PineoneTutorialsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3B4939228A0E0450001271C /* PineoneTutorialsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B493A328A0E0450001271C /* Build configuration list for PBXNativeTarget "PineoneTutorialsUITests" */;
+			buildPhases = (
+				DE65522A7E6CFE2EA3CAB4A1 /* [CP] Check Pods Manifest.lock */,
+				C3B4938F28A0E0450001271C /* Sources */,
+				C3B4939028A0E0450001271C /* Frameworks */,
+				C3B4939128A0E0450001271C /* Resources */,
+				0B6928A49FADCCD8CA42511F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3B4939528A0E0450001271C /* PBXTargetDependency */,
+			);
+			name = PineoneTutorialsUITests;
+			productName = PineoneTutorialsUITests;
+			productReference = C3B4939328A0E0450001271C /* PineoneTutorialsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3B4936B28A0E0410001271C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C3B4937228A0E0410001271C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C3B4938828A0E0440001271C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C3B4937228A0E0410001271C;
+					};
+					C3B4939228A0E0450001271C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C3B4937228A0E0410001271C;
+					};
+				};
+			};
+			buildConfigurationList = C3B4936E28A0E0410001271C /* Build configuration list for PBXProject "PineoneTutorials" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3B4936A28A0E0410001271C;
+			productRefGroup = C3B4937428A0E0410001271C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3B4937228A0E0410001271C /* PineoneTutorials */,
+				C3B4938828A0E0440001271C /* PineoneTutorialsTests */,
+				C3B4939228A0E0450001271C /* PineoneTutorialsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3B4937128A0E0410001271C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B4938328A0E0440001271C /* LaunchScreen.storyboard in Resources */,
+				C3B4938028A0E0440001271C /* Assets.xcassets in Resources */,
+				C3B4937E28A0E0410001271C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B4938728A0E0440001271C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B4939128A0E0450001271C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B6928A49FADCCD8CA42511F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PineoneTutorials-PineoneTutorialsUITests/Pods-PineoneTutorials-PineoneTutorialsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PineoneTutorials-PineoneTutorialsUITests/Pods-PineoneTutorials-PineoneTutorialsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PineoneTutorials-PineoneTutorialsUITests/Pods-PineoneTutorials-PineoneTutorialsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		408B52FA99EFED782EB17274 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PineoneTutorials/Pods-PineoneTutorials-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PineoneTutorials/Pods-PineoneTutorials-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PineoneTutorials/Pods-PineoneTutorials-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99DCBC8E138CF78CE8CE39B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PineoneTutorials-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E90BF8DCDA939BFFDB146FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PineoneTutorialsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE65522A7E6CFE2EA3CAB4A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PineoneTutorials-PineoneTutorialsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3B4936F28A0E0410001271C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB92F8A028A2A65800E72C6D /* UIViewController+.swift in Sources */,
+				C3A8C9EF28A4FC2B00701FEC /* MainTabbarController.swift in Sources */,
+				C3B4937B28A0E0410001271C /* SearchViewController.swift in Sources */,
+				FB92F8A228A2AD7700E72C6D /* Int+.swift in Sources */,
+				FB92F89728A13F5F00E72C6D /* SearchViewCell.swift in Sources */,
+				C3B4937728A0E0410001271C /* AppDelegate.swift in Sources */,
+				C3C551EE28AC9FF50066DEEC /* ToastConfiguration.swift in Sources */,
+				C3B493B228A0FF580001271C /* Book.swift in Sources */,
+				C3C551F328AC9FF50066DEEC /* Toast.swift in Sources */,
+				C3C551F628ACDB950066DEEC /* UIAnimatable.swift in Sources */,
+				C3A8C9E428A38DCD00701FEC /* UIView+.swift in Sources */,
+				FB92F89D28A29D8B00E72C6D /* SearchResultsCell.swift in Sources */,
+				C3A8C9E028A3722900701FEC /* Substring+.swift in Sources */,
+				C3B493AF28A0F4940001271C /* APIService.swift in Sources */,
+				C3B493A728A0EE9C0001271C /* NewBooksViewController.swift in Sources */,
+				FB92F89B28A168EF00E72C6D /* SearchPlaceholderView.swift in Sources */,
+				C3C551EF28AC9FF50066DEEC /* ToastView.swift in Sources */,
+				FB92F89928A1416000E72C6D /* NewBooksCell.swift in Sources */,
+				FB84336928AA7FD600918DCB /* Double+.swift in Sources */,
+				C3B4937928A0E0410001271C /* SceneDelegate.swift in Sources */,
+				C3B493B428A212EB0001271C /* DetailBookController.swift in Sources */,
+				C3A8C9E228A3816800701FEC /* String+.swift in Sources */,
+				C3C551F028AC9FF50066DEEC /* AppleTextToastView.swift in Sources */,
+				C3B493B728A251850001271C /* R.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B4938528A0E0440001271C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B4938E28A0E0440001271C /* PineoneTutorialsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B4938F28A0E0450001271C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B4939828A0E0450001271C /* PineoneTutorialsUITests.swift in Sources */,
+				C3B4939A28A0E0450001271C /* PineoneTutorialsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3B4938B28A0E0440001271C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B4937228A0E0410001271C /* PineoneTutorials */;
+			targetProxy = C3B4938A28A0E0440001271C /* PBXContainerItemProxy */;
+		};
+		C3B4939528A0E0450001271C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B4937228A0E0410001271C /* PineoneTutorials */;
+			targetProxy = C3B4939428A0E0450001271C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3B4937C28A0E0410001271C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3B4937D28A0E0410001271C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3B4938128A0E0440001271C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3B4938228A0E0440001271C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3B4939B28A0E0450001271C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3B4939C28A0E0450001271C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3B4939E28A0E0450001271C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7206F4A5900761A5C63379A5 /* Pods-PineoneTutorials.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LFRY7BQTRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PineoneTutorials/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pineone.PineoneTutorials;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3B4939F28A0E0450001271C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B05563B9FB3562FF21D57501 /* Pods-PineoneTutorials.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LFRY7BQTRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PineoneTutorials/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pineone.PineoneTutorials;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3B493A128A0E0450001271C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3C361E336C06F003AC69652 /* Pods-PineoneTutorialsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LFRY7BQTRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pineone.PineoneTutorialsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PineoneTutorials.app/PineoneTutorials";
+			};
+			name = Debug;
+		};
+		C3B493A228A0E0450001271C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A3D86CF84A32BA6292C86F /* Pods-PineoneTutorialsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LFRY7BQTRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pineone.PineoneTutorialsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PineoneTutorials.app/PineoneTutorials";
+			};
+			name = Release;
+		};
+		C3B493A428A0E0450001271C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1A3EB0A0D2D62CE38CBA7A /* Pods-PineoneTutorials-PineoneTutorialsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LFRY7BQTRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pineone.PineoneTutorialsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PineoneTutorials;
+			};
+			name = Debug;
+		};
+		C3B493A528A0E0450001271C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E19725882D219B2538BA164 /* Pods-PineoneTutorials-PineoneTutorialsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LFRY7BQTRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pineone.PineoneTutorialsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PineoneTutorials;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3B4936E28A0E0410001271C /* Build configuration list for PBXProject "PineoneTutorials" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B4939B28A0E0450001271C /* Debug */,
+				C3B4939C28A0E0450001271C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3B4939D28A0E0450001271C /* Build configuration list for PBXNativeTarget "PineoneTutorials" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B4939E28A0E0450001271C /* Debug */,
+				C3B4939F28A0E0450001271C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3B493A028A0E0450001271C /* Build configuration list for PBXNativeTarget "PineoneTutorialsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B493A128A0E0450001271C /* Debug */,
+				C3B493A228A0E0450001271C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3B493A328A0E0450001271C /* Build configuration list for PBXNativeTarget "PineoneTutorialsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B493A428A0E0450001271C /* Debug */,
+				C3B493A528A0E0450001271C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3B4936B28A0E0410001271C /* Project object */;
+}
